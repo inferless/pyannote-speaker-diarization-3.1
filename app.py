@@ -4,7 +4,7 @@ import urllib.request
 from pyannote.audio import Pipeline
 import torch
 from pydub import AudioSegment
-
+import os
 
 class InferlessPythonModel:
     def download_file(self,url):
@@ -28,9 +28,10 @@ class InferlessPythonModel:
         return base64_encoded
         
     def initialize(self):
+        HF_TOKEN = os.getenv("HF_TOKEN")  # Access Hugging Face token from environment variable
         self.pipeline = Pipeline.from_pretrained(
           "pyannote/speaker-diarization-3.1",
-          use_auth_token="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")
+          use_auth_token=HF_TOKEN)
         
         self.pipeline.to(torch.device("cuda"))
 
