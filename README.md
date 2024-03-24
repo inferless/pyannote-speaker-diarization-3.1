@@ -32,42 +32,6 @@ Enter all the required details to Import your model. Refer [this link](https://d
 
 The following is a sample Input and Output JSON for this model which you can use while importing this model on Inferless.
 
-### Input
-```json
-{
-    "inputs": [
-      {
-        "data": [
-          "https://github.com/rbgo404/Files/raw/main/TunePocket-Corporate-Logo-4-Sec-Preview.mp3"
-        ],
-        "name": "audio_url",
-        "shape": [
-          1
-        ],
-        "datatype": "BYTES"
-      }
-    ]
-}
-```
-
-### Output
-```json
-{
-    "outputs": [
-      {
-        "data": [
-          "data"
-        ],
-        "name": "generated_data",
-        "shape": [
-          1
-        ],
-        "datatype": "BYTES"
-      }
-    ]
-}
-```
-
 ---
 ## Curl Command
 Following is an example of the curl command you can use to make inference. You can find the exact curl command in the Model's API page in Inferless.
