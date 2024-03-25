@@ -29,7 +29,7 @@ configuration:
 env:
   # Add your environment variables here
   # VOLUME_NFS: '/var/nfs-mount/common_llm'
-  HF_TOKEN: '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'
+  HF_TOKEN: '<YOUR_HF_TOKEN>'
 secrets:
   # Add your secret ids here you can find it by running `inferless secrets list`
   # - 65723205-ce21-4392-a10b-3tf00c58988c
