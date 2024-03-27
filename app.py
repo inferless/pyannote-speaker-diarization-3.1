@@ -9,11 +9,7 @@ import os
 class InferlessPythonModel:
     def download_file(self,url):
         filename = "file.mp3"
-        try:
-            urllib.request.urlretrieve(url, filename)
-            print(f"File {filename} downloaded successfully.")
-        except Exception as e:
-            print(f"Failed to download the file. Error: {e}")
+        urllib.request.urlretrieve(url, filename)
         
         return filename
     
